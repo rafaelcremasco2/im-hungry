@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="DevRadar" title="#delicinha" src="https://github.com/rafaelcremasco2/im-hungry/blob/master/assets/splash.png?raw=true" width="200px" />
+    <img alt="DevRadar" title="#delicinha" src="https://github.com/rafaelcremasco2/im-hungry/blob/master/assets/splash.png?raw=true" width="400px" />
 </h1>
 
 <h4 align="center">

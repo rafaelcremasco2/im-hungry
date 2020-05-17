@@ -23,6 +23,8 @@
     ],
     "ios": {
       "supportsTablet": true
-    }
+    },
+    "description": "Application developed to help people who are hungry due to COVID-19.",
+    "githubUrl": "https://github.com/rafaelcremasco2/im-hungry.git"
   }
 }
