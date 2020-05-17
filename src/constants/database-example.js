@@ -1,0 +1,1 @@
+export const URI_DATABASE = 'YOUR LINK DATABASE'

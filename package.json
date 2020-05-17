@@ -1,0 +1,38 @@
+{
+  "author": {
+    "email": "rafaelcremasco@hotmail.com",
+    "name": "Rafael Cremasco Lacerda",
+    "url": "https://github.com/rafaelcremasco2"
+  },
+  "description": "Application developed to help people who are hungry due to COVID-19.",
+  "license": "MIT",
+  "repository": "https://github.com/rafaelcremasco2/im-hungry",
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "eject": "expo eject"
+  },
+  "dependencies": {
+    "axios": "0.18.0",
+    "expo": "~37.0.3",
+    "expo-location": "~8.1.0",
+    "react": "~16.9.0",
+    "react-dom": "~16.9.0",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-37.0.1.tar.gz",
+    "react-native-maps": "0.26.1",
+    "react-native-vector-icons": "^6.6.0",
+    "react-native-web": "~0.11.7",
+    "react-navigation": "2.14.2",
+    "react-redux": "5.0.7",
+    "redux": "4.0.0",
+    "redux-thunk": "2.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.6",
+    "babel-preset-expo": "~8.1.0"
+  },
+  "private": true
+}
