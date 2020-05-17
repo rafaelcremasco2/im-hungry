@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="DevRadar" title="#delicinha" src="https://github.com/rafaelcremasco2/im-hungry/blob/master/assets/splash.png?raw=true" width="400px" />
+    <img alt="TenhoFome" title="#salveUmaVida" src="https://github.com/rafaelcremasco2/im-hungry/blob/master/assets/splash.png?raw=true" width="400px" />
 </h1>
 
 <h4 align="center">
@@ -45,6 +45,8 @@ O "I'm Hungry " ou "TENHO fome" é um projeto que visa conectar pessoas que dese
 ## 🔖 Layout
 
 It will be available soon.
+
+<img alt="Scrennshot" title="#radar" src="https://github.com/rafaelcremasco2/im-hungry/blob/master/screenshot/Screenshot_1589509224.png?raw=true" width="400px" />
 
 ## 🤔 How to contribute
 
