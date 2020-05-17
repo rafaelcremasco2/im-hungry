@@ -46,13 +46,17 @@ const styles = StyleSheet.create({
         padding: 10
     },
     nickname: {
+        width: '90%',
         marginTop: 30,
         fontSize: 30,
-        fontWeight: 'bold'
+        fontWeight: 'bold',
+        textAlign: 'center'
     },
     email: {
+        width: '90%',
         marginTop: 20,
-        fontSize: 25
+        fontSize: 25,
+        textAlign: 'center'
     },
     buttom: {
         width: '90%',

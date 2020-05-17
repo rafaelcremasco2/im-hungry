@@ -125,12 +125,14 @@ const styles = StyleSheet.create({
         justifyContent: 'center'
     },
     text: {
+        width: '90%',
         fontSize: 20,
         color: '#333',
         alignItems: 'center',
         textAlign: 'center'
     },
     textAlert: {
+        width: '90%',
         marginTop: 20,
         fontSize: 20,
         color: '#333',
@@ -155,8 +157,8 @@ const styles = StyleSheet.create({
         fontWeight: 'bold'
     },
     input: {
-        marginTop: 20,
         width: '90%',
+        marginTop: 20,
         backgroundColor: '#EEE',
         height: 40,
         borderWidth: 1,
