@@ -1,11 +1,10 @@
 {
   "expo": {
-    "name": "Tenho fome",
-    "slug": "tenhofome",
+    "name": "TENHO fome",
+    "slug": "tenho-fome",
     "platforms": [
       "ios",
-      "android",
-      "web"
+      "android"
     ],
     "version": "1.0.0",
     "orientation": "portrait",
@@ -22,7 +21,13 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "br.com.rafaelcremascolacerda.tenhofome",
+      "buildNumber": "1.0.0"
+    },
+    "android": {
+      "package": "br.com.rafaelcremascolacerda.tenhofome",
+      "versionCode": 1
     },
     "description": "Application developed to help people who are hungry due to COVID-19.",
     "githubUrl": "https://github.com/rafaelcremasco2/im-hungry.git"

@@ -104,6 +104,7 @@ function Radar({ navigation }) {
                             <View style={styles.callout}>
                                 <Text style={styles.textSuccor}>{person.person}</Text>
                                 <Text style={styles.textHelp}>necessita de sua ajuda, leve alimento a quem sente fome.</Text>
+                                <Text style={styles.textAddress}>Endereço: {person.address}</Text>
                                 <Text style={styles.textAuth}>{`Pedido de auxilio postado por ${person.nickname}.`}</Text>
                             </View>
                         </Callout>
@@ -141,13 +142,18 @@ const styles = StyleSheet.create({
         height: 54
     },
     callout: {
-        width: 260,
+        width: 290,
     },
     textSuccor: {
         fontWeight: 'bold',
         fontSize: 16,
     },
     textHelp: {
+        fontSize: 16,
+        textAlign: 'justify',
+        marginBottom: 2
+    },
+    textAddress: {
         fontSize: 16,
         textAlign: 'justify'
     },

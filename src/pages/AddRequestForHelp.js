@@ -22,6 +22,7 @@ import Header from '../components/Header'
 class AddRequestForHelp extends Component {
     state = {
         person: '',
+        address: '',
         latitude: null,
         longitude: null
     }
@@ -35,6 +36,7 @@ class AddRequestForHelp extends Component {
         if (prevProps.loading && !this.props.loading) {
             this.setState({
                 person: '',
+                address: '',
                 latitude: null,
                 longitude: null
             })
@@ -53,6 +55,12 @@ class AddRequestForHelp extends Component {
                     "É necessário informar o nome da pessoa necessitada.")
                 return
             }
+            if (this.state.address === '' || this.state.address === null) {
+                Alert.alert(
+                    TITLE_ERROR,
+                    "É necessário informar o endereço para assitência.")
+                return
+            }
 
             const { latitude, longitude } = await this.getGeolocation()
             this.setState({ latitude, longitude })
@@ -62,6 +70,7 @@ class AddRequestForHelp extends Component {
                 nickname: this.props.name,
                 email: this.props.email,
                 person: this.state.person,
+                address: this.state.address,
                 latitude: this.state.latitude,
                 longitude: this.state.longitude
             })
@@ -100,7 +109,18 @@ class AddRequestForHelp extends Component {
                             autoCapitalize="words"
                             autoCorrect={false}
                         />
-                        <Text style={styles.textAlert}>Esteja no endereço para definir o local da pessoa necessitada.</Text>
+                        <Text style={styles.text}>Informe o endereço para assistência.</Text>
+                        <TextInput placeholder='Endereço Completo' style={styles.input}
+                            value={this.state.address}
+                            onChangeText={address => this.setState({ address })}
+                            placeholderTextColor="#999"
+                            autoCapitalize="words"
+                            autoCorrect={false}
+                        />
+                        <View style={styles.containerAlert}>
+                            <Icon name='exclamation-triangle' size={40} color="#ee6c7d" />
+                            <Text style={styles.textAlert}>Esteja no endereço informado para definir a posição exata do local.</Text>
+                        </View>
                         <TouchableOpacity onPress={this.save}
                             style={[styles.buttom, this.props.loading ? styles.buttomDisabled : null]}
                             disabled={this.props.loading}>
@@ -124,24 +144,34 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center'
     },
+    containerAlert: {
+        width: '90%',
+        flexDirection: 'row',
+        justifyContent: "center",
+        alignItems: 'center',
+        paddingLeft: 10,
+        paddingRight: 6,
+        paddingTop: 2,
+        paddingBottom: 2,
+        marginBottom: 20
+    },
     text: {
         width: '90%',
         fontSize: 20,
         color: '#333',
         alignItems: 'center',
-        textAlign: 'center'
+        textAlign: 'left'
     },
     textAlert: {
-        width: '90%',
-        marginTop: 20,
+        flex: 1,
         fontSize: 20,
-        color: '#333',
+        color: '#ee6c7d',
         alignItems: 'center',
-        textAlign: 'center'
+        textAlign: 'center',
     },
     buttom: {
         width: '90%',
-        marginTop: 30,
+        marginTop: 10,
         padding: 10,
         backgroundColor: '#4286f4',
         alignItems: 'center',
@@ -158,7 +188,8 @@ const styles = StyleSheet.create({
     },
     input: {
         width: '90%',
-        marginTop: 20,
+        marginTop: 0,
+        marginBottom: 20,
         backgroundColor: '#EEE',
         height: 40,
         borderWidth: 1,

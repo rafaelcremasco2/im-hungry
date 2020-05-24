@@ -11,10 +11,15 @@ import Radar from '../pages/Radar'
 import Profile from '../pages/Profile'
 import Register from '../pages/Register'
 import AddRequestForHelp from '../pages/AddRequestForHelp'
+import PrivacyPolicy from '../pages/PrivacyPolicy'
+import Terms from '../pages/Terms'
 
 const authRouter = createStackNavigator({
     Login: { screen: Login, navigationOptions: { title: 'Login' } },
     Register: { screen: Register, navigationOptions: { title: 'Cadastro' } },
+    Privacy: { screen: PrivacyPolicy, navigationOptions: { title: 'Política de Privacidade' } },
+    Terms: { screen: Terms, navigationOptions: { title: 'Termos de Uso' } },
+
 }, {
     initialRouteName: 'Login'
 })

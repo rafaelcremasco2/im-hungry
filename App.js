@@ -8,6 +8,7 @@ import storeConfig from './src/store/storeConfig'
 import axios from 'axios'
 axios.defaults.baseURL = URI_DATABASE
 
+
 const store = storeConfig()
 
 export default function App() {

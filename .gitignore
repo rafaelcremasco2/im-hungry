@@ -1,6 +1,7 @@
 node_modules/**/*
 .expo/*
 npm-debug.*
+*.der
 *.jks
 *.p8
 *.p12
@@ -11,6 +12,7 @@ web-build/
 web-report/
 /src/constants/auth.js
 /src/constants/database.js
+comand.txt
 
 # macOS
 .DS_Store

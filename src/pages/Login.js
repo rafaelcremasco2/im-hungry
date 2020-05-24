@@ -29,8 +29,8 @@ class Login extends Component {
 
     render() {
         return (
-            <ScrollView>
-                <View style={styles.container}>
+            <View style={styles.container}>
+                <View style={styles.containerForms}>
                     <TextInput placeholder='Email' style={styles.input}
                         autoFocus={false} keyboardType='email-address'
                         value={this.state.email}
@@ -51,9 +51,20 @@ class Login extends Component {
                     }} style={styles.buttomRegister}>
                         <Text style={styles.buttomTextRegister}>Ainda não sou cadastratado.</Text>
                     </TouchableOpacity>
-
                 </View>
-            </ScrollView>
+                <View style={styles.containerTerms}>
+                    <TouchableOpacity onPress={() => {
+                        this.props.navigation.navigate('Privacy')
+                    }} style={styles.buttomPrivacy}>
+                        <Text style={styles.buttomTextPrivacy}>Política de Privacidade.</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity onPress={() => {
+                        this.props.navigation.navigate('Terms')
+                    }} style={styles.buttomTerms}>
+                        <Text style={styles.buttomTextTerms}>Termos de uso.</Text>
+                    </TouchableOpacity>
+                </View>
+            </View>
         )
     }
 }
@@ -61,8 +72,18 @@ class Login extends Component {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
+        flexDirection: 'column',
+        justifyContent: 'space-between',
+    },
+    containerForms: {
+        flex: 1,
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
+    },
+    containerTerms: {
+        height: 50,
+        flexDirection: 'row',
+        backgroundColor: 'steelblue'
     },
     buttom: {
         width: '90%',
@@ -75,7 +96,7 @@ const styles = StyleSheet.create({
     },
     buttomRegister: {
         width: '90%',
-        marginTop: 30,
+        marginTop: 20,
         padding: 10,
         alignItems: 'center',
         justifyContent: 'center',
@@ -84,6 +105,30 @@ const styles = StyleSheet.create({
     buttomTextRegister: {
         fontSize: 20,
         color: '#333'
+    },
+    buttomPrivacy: {
+        flex: 1,
+        marginTop: 5,
+        padding: 10,
+        alignItems: 'center',
+        justifyContent: 'center',
+        borderRadius: 10
+    },
+    buttomTextPrivacy: {
+        fontSize: 16,
+        color: '#FFF'
+    },
+    buttomTerms: {
+        flex: 1,
+        marginTop: 5,
+        padding: 10,
+        alignItems: 'center',
+        justifyContent: 'center',
+        borderRadius: 10
+    },
+    buttomTextTerms: {
+        fontSize: 16,
+        color: '#FFF'
     },
     buttomText: {
         fontSize: 20,
