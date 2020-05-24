@@ -13,7 +13,6 @@ web-report/
 /src/constants/auth.js
 /src/constants/database.js
 comand.txt
-app.json
 
 # macOS
 .DS_Store
