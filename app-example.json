@@ -22,11 +22,11 @@
         ],
         "ios": {
             "supportsTablet": true,
-            "bundleIdentifier": "br.com.rafaelcremascolacerda.tenhofome",
+            "bundleIdentifier": "com.myname.tenhofome",
             "buildNumber": "1.0.0"
         },
         "android": {
-            "package": "br.com.rafaelcremascolacerda.tenhofome",
+            "package": "com.myname.tenhofome",
             "versionCode": 1
         },
         "description": "Application developed to help people who are hungry due to COVID-19.",
