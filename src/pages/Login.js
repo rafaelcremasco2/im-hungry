@@ -29,42 +29,37 @@ class Login extends Component {
 
     render() {
         return (
-            <View style={styles.container}>
-                <View style={styles.containerForms}>
-                    <TextInput placeholder='Email' style={styles.input}
-                        autoFocus={false} keyboardType='email-address'
-                        value={this.state.email}
-                        onChangeText={email => this.setState({ email })}
-                        placeholderTextColor="#999"
-                        autoCorrect={false} />
-                    <TextInput placeholder='Senha' style={styles.input}
-                        secureTextEntry={true}
-                        value={this.state.password}
-                        onChangeText={password => this.setState({ password })}
-                        placeholderTextColor="#999"
-                        autoCorrect={false} />
-                    <TouchableOpacity onPress={this.login} style={styles.buttom}>
-                        <Text style={styles.buttomText}>Entrar</Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity onPress={() => {
-                        this.props.navigation.navigate('Register')
-                    }} style={styles.buttomRegister}>
-                        <Text style={styles.buttomTextRegister}>Ainda não sou cadastratado.</Text>
-                    </TouchableOpacity>
+            <ScrollView>
+                <View style={styles.container}>
+                    <View style={styles.containerForms}>
+                        <TextInput placeholder='Email' style={styles.input}
+                            autoFocus={false} keyboardType='email-address'
+                            value={this.state.email}
+                            onChangeText={email => this.setState({ email })}
+                            placeholderTextColor="#999"
+                            autoCorrect={false} />
+                        <TextInput placeholder='Senha' style={styles.input}
+                            secureTextEntry={true}
+                            value={this.state.password}
+                            onChangeText={password => this.setState({ password })}
+                            placeholderTextColor="#999"
+                            autoCorrect={false} />
+                        <TouchableOpacity onPress={this.login} style={styles.buttom}>
+                            <Text style={styles.buttomText}>Entrar</Text>
+                        </TouchableOpacity>
+                        <TouchableOpacity onPress={() => {
+                            this.props.navigation.navigate('Register')
+                        }} style={styles.buttomRegister}>
+                            <Text style={styles.buttomTextRegister}>Ainda não sou cadastratado</Text>
+                        </TouchableOpacity>
+                        {/*  <TouchableOpacity onPress={() => {
+                            this.props.navigation.navigate('ForgotPassword')
+                        }} style={styles.buttomForgotPassword}>
+                            <Text style={styles.buttomTextForgotPassword}>Esqueci minha senha</Text>
+                        </TouchableOpacity> */}
+                    </View>
                 </View>
-                <View style={styles.containerTerms}>
-                    <TouchableOpacity onPress={() => {
-                        this.props.navigation.navigate('Privacy')
-                    }} style={styles.buttomPrivacy}>
-                        <Text style={styles.buttomTextPrivacy}>Política de Privacidade.</Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity onPress={() => {
-                        this.props.navigation.navigate('Terms')
-                    }} style={styles.buttomTerms}>
-                        <Text style={styles.buttomTextTerms}>Termos de uso.</Text>
-                    </TouchableOpacity>
-                </View>
-            </View>
+            </ScrollView>
         )
     }
 }
@@ -80,14 +75,10 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
     },
-    containerTerms: {
-        height: 50,
-        flexDirection: 'row',
-        backgroundColor: 'steelblue'
-    },
     buttom: {
         width: '90%',
         marginTop: 30,
+        marginBottom: 30,
         padding: 10,
         backgroundColor: '#4286f4',
         alignItems: 'center',
@@ -100,33 +91,23 @@ const styles = StyleSheet.create({
         padding: 10,
         alignItems: 'center',
         justifyContent: 'center',
-        borderRadius: 10
+        borderRadius: 10,
+        backgroundColor: 'steelblue',
     },
     buttomTextRegister: {
-        fontSize: 20,
-        color: '#333'
-    },
-    buttomPrivacy: {
-        flex: 1,
-        marginTop: 5,
-        padding: 10,
-        alignItems: 'center',
-        justifyContent: 'center',
-        borderRadius: 10
-    },
-    buttomTextPrivacy: {
         fontSize: 16,
         color: '#FFF'
     },
-    buttomTerms: {
-        flex: 1,
-        marginTop: 5,
+    buttomForgotPassword: {
+        width: '90%',
+        marginTop: 20,
         padding: 10,
         alignItems: 'center',
         justifyContent: 'center',
-        borderRadius: 10
+        borderRadius: 10,
+        backgroundColor: 'steelblue',
     },
-    buttomTextTerms: {
+    buttomTextForgotPassword: {
         fontSize: 16,
         color: '#FFF'
     },

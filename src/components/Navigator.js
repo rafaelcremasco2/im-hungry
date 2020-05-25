@@ -7,18 +7,18 @@ import {
 import Icon from 'react-native-vector-icons/FontAwesome'
 
 import Login from '../pages/Login'
+import Register from '../pages/Register'
+import ForgotPassword from '../pages/ForgotPassword'
 import Radar from '../pages/Radar'
 import Profile from '../pages/Profile'
-import Register from '../pages/Register'
 import AddRequestForHelp from '../pages/AddRequestForHelp'
-import PrivacyPolicy from '../pages/PrivacyPolicy'
 import Terms from '../pages/Terms'
 
 const authRouter = createStackNavigator({
     Login: { screen: Login, navigationOptions: { title: 'Login' } },
     Register: { screen: Register, navigationOptions: { title: 'Cadastro' } },
-    Privacy: { screen: PrivacyPolicy, navigationOptions: { title: 'Política de Privacidade' } },
-    Terms: { screen: Terms, navigationOptions: { title: 'Termos de Uso' } },
+    ForgotPassword: { screen: ForgotPassword, navigationOptions: { title: 'Esqueci minha senha' } },
+    Terms: { screen: Terms, navigationOptions: { title: 'Termos de Uso e Privacidade' } },
 
 }, {
     initialRouteName: 'Login'

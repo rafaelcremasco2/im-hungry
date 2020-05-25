@@ -70,7 +70,7 @@ class Register extends Component {
                 <View style={styles.container}>
                     <View style={styles.containerForms}>
                         <TextInput placeholder='Nome' style={styles.input}
-                            autoFocus={true} value={this.state.name}
+                            autoFocus={false} value={this.state.name}
                             onChangeText={name => this.setState({ name })}
                             placeholderTextColor="#999"
                             autoCapitalize="words"
@@ -87,17 +87,12 @@ class Register extends Component {
                             autoCorrect={false} />
                         <View style={styles.containerTerms}>
                             <TouchableOpacity onPress={() => {
-                                this.props.navigation.navigate('Privacy')
-                            }} style={styles.buttomPrivacy}>
-                                <Text style={styles.buttomTextPrivacy}>Política de Privacidade.</Text>
-                            </TouchableOpacity>
-                            <TouchableOpacity onPress={() => {
                                 this.props.navigation.navigate('Terms')
                             }} style={styles.buttomTerms}>
-                                <Text style={styles.buttomTextTerms}>Termos de Uso.</Text>
+                                <Text style={styles.buttomTextTerms}>Termos de Uso e Privacidade</Text>
                             </TouchableOpacity>
                         </View>
-                        <Text style={styles.text}>Concorda com a Política de Privacidade e com o Termo de Uso?</Text>
+                        <Text style={styles.text}>Concorda com os Termos de Uso e Privacidade?</Text>
                         <View style={styles.containerSwitch}>
                             <Text style={styles.switchText}>Não</Text>
                             <Switch
@@ -147,17 +142,6 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'center'
-    },
-    buttomPrivacy: {
-        flex: 1,
-        padding: 2,
-        alignItems: 'center',
-        justifyContent: 'center',
-        borderRadius: 10
-    },
-    buttomTextPrivacy: {
-        fontSize: 16,
-        color: '#FFF'
     },
     buttomTerms: {
         flex: 1,

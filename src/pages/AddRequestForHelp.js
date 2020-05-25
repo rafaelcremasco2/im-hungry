@@ -153,18 +153,19 @@ const styles = StyleSheet.create({
         paddingRight: 6,
         paddingTop: 2,
         paddingBottom: 2,
+        marginTop: 20,
         marginBottom: 20
     },
     text: {
         width: '90%',
-        fontSize: 20,
+        fontSize: 18,
         color: '#333',
         alignItems: 'center',
         textAlign: 'left'
     },
     textAlert: {
         flex: 1,
-        fontSize: 20,
+        fontSize: 17,
         color: '#ee6c7d',
         alignItems: 'center',
         textAlign: 'center',

@@ -7,7 +7,9 @@ import {
 import {
     TITLE_ERROR,
     TEXT_DEFAULT_ERROR,
-    TEXT_ERROR_LOGIN
+    TEXT_ERROR_LOGIN,
+    TITLE_SUCCESS,
+    TEXT_PASSWORD_RESET
 } from '../../constants/message'
 import { API_KEY, AUTH_BASE_URL } from '../../constants/auth'
 import { setMessage } from '../actions/message'
@@ -26,6 +28,51 @@ export const logout = () => {
         type: USER_LOGGED_OUT
     }
 }
+
+export const loadingUser = () => {
+    return {
+        type: LOADING_USER
+    }
+}
+
+export const userLoaded = () => {
+    return {
+        type: USER_LOADED
+    }
+}
+
+/* export const passworReset = user => {
+    return dispatch => {
+        //dispatch(loadingUser())
+        console.log(user.email)
+
+        axios.post(`${AUTH_BASE_URL}/resetPassword?key=${API_KEY}`, {
+            email: user.email,
+            returnSecureToken: true
+        })
+            .catch(err => {
+                console.log('==================================')
+                console.log('DEU ERRO: ' + err)
+                console.log('==================================')
+                dispatch(setMessage({
+                    title: TITLE_ERROR,
+                    text: TEXT_DEFAULT_ERROR + err
+                }))
+            })
+            .then(res => {
+                console.log('==================================')
+                console.log('URI: ' + `${AUTH_BASE_URL}/resetPassword?key=${API_KEY}`)
+                console.log('RESPOSTA PASSWORD-RESET')
+                console.log(res)
+                console.log('==================================')
+                dispatch(setMessage({
+                    title: TITLE_SUCCESS,
+                    text: TEXT_PASSWORD_RESET
+                }))
+                //dispatch(userLoaded())
+            })
+    }
+} */
 
 export const createUser = user => {
     return dispatch => {
@@ -60,17 +107,6 @@ export const createUser = user => {
     }
 }
 
-export const loadingUser = () => {
-    return {
-        type: LOADING_USER
-    }
-}
-
-export const userLoaded = () => {
-    return {
-        type: USER_LOADED
-    }
-}
 
 export const login = user => {
     return dispatch => {
