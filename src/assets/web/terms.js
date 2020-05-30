@@ -112,8 +112,8 @@ module.exports = function () {
                     <ol>
                         <li>Os termos "TENHO FOME" ou "Serviços do TENHO FOME" abrangem os recursos e serviços prestados no
                             aplicativo denominado TENHO FOME.</li>
-                        <li>O TENHO FOME é um aplicativo de que visa conectar pessoas que desejam ajudar a pessoas que estejam
-                            necessitando de ajuda nos momentos de pandemia do COVID-19,
+                        <li>O TENHO FOME é um aplicativo que visa conectar pessoas que desejam ajudar aqueles estejam
+                            necessitando de ajuda nos momentos de pandemia e calamidade pública,
                             desenvolvido sem fins lucrativos.</li>
                         <li>O termo "Plataforma" envolve um conjunto de APIs e serviços (como conteúdo) que permitem que outras
                             usuários, inclusive desenvolvedores do aplicativo, recuperem dados do TENHO FOME.</li>

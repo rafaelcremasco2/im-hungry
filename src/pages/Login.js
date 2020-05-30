@@ -29,20 +29,20 @@ class Login extends Component {
 
     render() {
         return (
-            <ScrollView>
+            <ScrollView style={styles.scroll}>
                 <View style={styles.container}>
                     <View style={styles.containerForms}>
                         <TextInput placeholder='Email' style={styles.input}
                             autoFocus={false} keyboardType='email-address'
                             value={this.state.email}
                             onChangeText={email => this.setState({ email })}
-                            placeholderTextColor="#999"
+                            placeholderTextColor="#838080"
                             autoCorrect={false} />
                         <TextInput placeholder='Senha' style={styles.input}
                             secureTextEntry={true}
                             value={this.state.password}
                             onChangeText={password => this.setState({ password })}
-                            placeholderTextColor="#999"
+                            placeholderTextColor="#838080"
                             autoCorrect={false} />
                         <TouchableOpacity onPress={this.login} style={styles.buttom}>
                             <Text style={styles.buttomText}>Entrar</Text>
@@ -65,10 +65,14 @@ class Login extends Component {
 }
 
 const styles = StyleSheet.create({
+    scroll: {
+        backgroundColor: '#FFF',
+    },
     container: {
         flex: 1,
         flexDirection: 'column',
         justifyContent: 'space-between',
+        backgroundColor: '#FFF',
     },
     containerForms: {
         flex: 1,
@@ -118,7 +122,7 @@ const styles = StyleSheet.create({
     input: {
         marginTop: 20,
         width: '90%',
-        backgroundColor: '#EEE',
+        backgroundColor: '#f3f1f1',
         height: 40,
         borderWidth: 1,
         borderColor: '#666',

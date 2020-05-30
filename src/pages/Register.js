@@ -66,24 +66,24 @@ class Register extends Component {
 
     render() {
         return (
-            <ScrollView>
+            <ScrollView style={styles.scroll}>
                 <View style={styles.container}>
                     <View style={styles.containerForms}>
                         <TextInput placeholder='Nome' style={styles.input}
                             autoFocus={false} value={this.state.name}
                             onChangeText={name => this.setState({ name })}
-                            placeholderTextColor="#999"
+                            placeholderTextColor="#838080"
                             autoCapitalize="words"
                             autoCorrect={false} />
                         <TextInput placeholder='Email' style={styles.input}
                             keyboardType='email-address' value={this.state.email}
                             onChangeText={email => this.setState({ email })}
-                            placeholderTextColor="#999"
+                            placeholderTextColor="#838080"
                             autoCorrect={false} />
                         <TextInput placeholder='Senha' style={styles.input}
                             secureTextEntry={true} value={this.state.password}
                             onChangeText={password => this.setState({ password })}
-                            placeholderTextColor="#999"
+                            placeholderTextColor="#838080"
                             autoCorrect={false} />
                         <View style={styles.containerTerms}>
                             <TouchableOpacity onPress={() => {
@@ -96,8 +96,8 @@ class Register extends Component {
                         <View style={styles.containerSwitch}>
                             <Text style={styles.switchText}>Não</Text>
                             <Switch
-                                trackColor={{ false: "#767577", true: "#81b0ff" }}
-                                thumbColor={this.state.terms ? "#f4f3f4" : "#f4f3f4"}
+                                trackColor={{ false: "#AAA", true: "#91b6f5" }}
+                                thumbColor={this.state.terms ? "#ffafb9" : "steelblue"}
                                 ios_backgroundColor="#3e3e3e"
                                 onValueChange={this.toggleTerms}
                                 value={this.state.terms}
@@ -118,10 +118,14 @@ class Register extends Component {
 }
 
 const styles = StyleSheet.create({
+    scroll: {
+        backgroundColor: '#FFF',
+    },
     container: {
         flex: 1,
         flexDirection: 'column',
         justifyContent: 'space-between',
+        backgroundColor: '#FFF',
     },
     containerForms: {
         flex: 1,

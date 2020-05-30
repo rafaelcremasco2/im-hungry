@@ -5,9 +5,6 @@
 <h4 align="center">
   🚀 Save a Life Project
 </h4>
-<h4 align="center">
-  🚀 Projeto Salve Uma Vida
-</h4>
 
 
 
@@ -35,12 +32,12 @@ This project was developed with the following technologies:
 - [React](https://reactjs.org)
 - [React Native](https://facebook.github.io/react-native/)
 - [Expo](https://expo.io/)
+- [Firebase](https://firebase.google.com/)
 
 ## 💻 Project
 
-"I'm Hungry" is a project that aims to connect people who want to help people who are in need in this pandemic moment during the COVID-19.
+This application aims to connect people with a desire to help those in need in times of pandemic and public calamity, developed on a nonprofit basis.
 
-O "I'm Hungry " ou "TENHO fome" é um projeto que visa conectar pessoas que desejam ajudar as pessoas que estão passando por necessidade nesse momento de pandemia por ocasião do COVID-19.
 
 ## 🔖 Layout
 

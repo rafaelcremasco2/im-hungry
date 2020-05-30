@@ -4,7 +4,7 @@
     "name": "Rafael Cremasco Lacerda",
     "url": "https://github.com/rafaelcremasco2"
   },
-  "description": "Application developed to help people who are hungry due to COVID-19.",
+  "description": "This application aims to connect people with a desire to help those in need in times of pandemic and public calamity, developed on a nonprofit basis.",
   "license": "MIT",
   "repository": "https://github.com/rafaelcremasco2/im-hungry",
   "main": "node_modules/expo/AppEntry.js",

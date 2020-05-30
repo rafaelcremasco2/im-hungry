@@ -97,7 +97,7 @@ class AddRequestForHelp extends Component {
 
     render() {
         return (
-            <ScrollView>
+            <ScrollView style={styles.scroll}>
                 <View style={styles.container}>
                     <Header />
                     <View style={styles.containerForm}>
@@ -105,7 +105,7 @@ class AddRequestForHelp extends Component {
                         <TextInput placeholder='Nome' style={styles.input}
                             value={this.state.person}
                             onChangeText={person => this.setState({ person })}
-                            placeholderTextColor="#999"
+                            placeholderTextColor="#838080"
                             autoCapitalize="words"
                             autoCorrect={false}
                         />
@@ -113,7 +113,7 @@ class AddRequestForHelp extends Component {
                         <TextInput placeholder='Endereço Completo' style={styles.input}
                             value={this.state.address}
                             onChangeText={address => this.setState({ address })}
-                            placeholderTextColor="#999"
+                            placeholderTextColor="#838080"
                             autoCapitalize="words"
                             autoCorrect={false}
                         />
@@ -135,8 +135,12 @@ class AddRequestForHelp extends Component {
 }
 
 const styles = StyleSheet.create({
+    scroll: {
+        backgroundColor: '#FFF',
+    },
     container: {
         flex: 1,
+        backgroundColor: '#FFF',
     },
     containerForm: {
         flex: 1,
@@ -191,7 +195,7 @@ const styles = StyleSheet.create({
         width: '90%',
         marginTop: 0,
         marginBottom: 20,
-        backgroundColor: '#EEE',
+        backgroundColor: '#f3f1f1',
         height: 40,
         borderWidth: 1,
         borderColor: '#666',
