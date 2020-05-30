@@ -1,35 +1,35 @@
 {
-    "expo": {
-        "name": "TENHO fome",
-        "slug": "tenho-fome",
-        "platforms": [
-            "ios",
-            "android"
-        ],
-        "version": "1.0.0",
-        "orientation": "portrait",
-        "icon": "./assets/icon.png",
-        "splash": {
-            "image": "./assets/splash.png",
-            "resizeMode": "contain",
-            "backgroundColor": "#ffffff"
-        },
-        "updates": {
-            "fallbackToCacheTimeout": 0
-        },
-        "assetBundlePatterns": [
-            "**/*"
-        ],
-        "ios": {
-            "supportsTablet": true,
-            "bundleIdentifier": "br.com.rafaelcremascolacerda.tenhofome",
-            "buildNumber": "1.0.0"
-        },
-        "android": {
-            "package": "br.com.rafaelcremascolacerda.tenhofome",
-            "versionCode": 1
-        },
-        "description": "This application aims to connect people with a desire to help those in need in times of pandemic and public calamity, developed on a nonprofit basis.",
-        "githubUrl": "https://github.com/rafaelcremasco2/im-hungry.git"
-    }
+  "expo": {
+    "name": "TENHO fome",
+    "slug": "tenho-fome",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "br.com.rafaelcremascolacerda.tenhofome",
+      "buildNumber": "1.0.0"
+    },
+    "android": {
+      "package": "br.com.rafaelcremascolacerda.tenhofome",
+      "versionCode": 1
+    },
+    "description": "This application aims to connect people with a desire to help those in need in times of pandemic and public calamity, developed on a nonprofit basis.",
+    "githubUrl": "https://github.com/rafaelcremasco2/im-hungry.git"
+  }
 }
