@@ -177,7 +177,7 @@ const styles = StyleSheet.create({
     input: {
         marginTop: 20,
         width: '90%',
-        backgroundColor: '#EEE',
+        backgroundColor: '#f3f1f1',
         height: 40,
         borderWidth: 1,
         borderColor: '#666',
