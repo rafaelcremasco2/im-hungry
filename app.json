@@ -6,7 +6,7 @@
       "ios",
       "android"
     ],
-    "version": "1.0.0",
+    "version": "1.0.1",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
@@ -22,11 +22,11 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "br.com.rafaelcremascolacerda.tenhofome",
+      "bundleIdentifier": "br.com.rafaelcremascolacerda.tenhofomeplus",
       "buildNumber": "1.0.0"
     },
     "android": {
-      "package": "br.com.rafaelcremascolacerda.tenhofome",
+      "package": "br.com.rafaelcremascolacerda.tenhofomeplus",
       "versionCode": 1
     },
     "description": "This application aims to connect people with a desire to help those in need in times of pandemic and public calamity, developed on a nonprofit basis.",
